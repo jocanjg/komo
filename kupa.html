@@ -7,15 +7,8 @@
 
 	<!-- Stylesheets
 	============================================= -->
-	<!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Zilla+Slab:wght@400;500&display=swap" rel="stylesheet"> -->
-<!-- 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-	 -->
-
-
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Zilla+Slab:wght@400;500&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
@@ -29,17 +22,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<!-- Furniture Demo Specific Theme Stylesheet - #193532 -->
-	<!-- <link rel="stylesheet" href="css/colors.php?color=193532" type="text/css" /> -->
+	<link rel="stylesheet" href="css/colors.php?color=193532" type="text/css" />
 
 	<!-- Furniture Demo Specific Stylesheet -->
-	
-	<link rel="stylesheet" href="demos/furniture/furniture.css" type="text/css" /> 					
- <!-- Furniture Custom Fonts -->
+	<link rel="stylesheet" href="demos/furniture/furniture.css" type="text/css" /> <!-- Furniture Custom Css -->
+	<link rel="stylesheet" href="demos/furniture/css/fonts.css" type="text/css" /> <!-- Furniture Custom Fonts -->
 	<!-- / -->
 
 	<!-- Document Title
 	============================================= -->
-	<title>KOMO Design | Mermerni stolovi</title>
+	<title>Single - Furniture | Canvas</title>
 
 </head>
 
@@ -51,6 +43,83 @@
 
 	<!-- Cart Side Panel
 	============================================= -->
+	
+	<div id="side-panel" class="bg-white">
+
+		<!-- Cart Side Panel Close Icon
+		============================================= -->
+		<div id="side-panel-trigger-close" class="side-panel-trigger"><a href="#"><i class="icon-line-cross"></i></a></div>
+
+		<div class="side-panel-wrap">
+
+			<div class="top-cart d-flex flex-column h-100">
+				<div class="top-cart-title">
+					<h4>Shopping Cart <small class="bg-color-light icon-stacked text-center rounded-circle color">2</small></h4>
+				</div>
+
+				<!-- Cart Items
+				============================================= -->
+				<div class="top-cart-items">
+
+					<!-- Cart Item 1
+					============================================= -->
+					<div class="top-cart-item">
+						<div class="top-cart-item-image border-0">
+							<a href="#"><img src="demos/furniture/images/cart/1.jpg" alt="Cart Image 1" /></a>
+						</div>
+						<div class="top-cart-item-desc">
+							<div class="top-cart-item-desc-title">
+								<a href="#" class="fw-medium">Blue Sofa for Dining Room</a>
+								<span class="top-cart-item-price d-block"><del>$29.99</del> $19.99</span>
+								<div class="d-flex mt-2">
+									<a href="#" class="fw-normal text-black-50 text-smaller"><u>Edit</u></a>
+									<a href="#" class="fw-normal text-black-50 text-smaller ms-3"><u>Remove</u></a>
+								</div>
+							</div>
+							<div class="top-cart-item-quantity">x 1</div>
+						</div>
+					</div>
+
+					<!-- Cart Item 2
+					============================================= -->
+					<div class="top-cart-item">
+						<div class="top-cart-item-image border-0">
+							<a href="#"><img src="demos/furniture/images/cart/2.jpg" alt="Cart Image 2" /></a>
+						</div>
+						<div class="top-cart-item-desc">
+							<div class="top-cart-item-desc-title">
+								<a href="#" class="fw-medium">Ceilling Light for Office</a>
+								<span class="top-cart-item-price d-block">$24.99</span>
+								<div class="d-flex mt-2">
+									<a href="#" class="fw-normal text-black-50 text-smaller"><u>Edit</u></a>
+									<a href="#" class="fw-normal text-black-50 text-smaller ms-3"><u>Remove</u></a>
+								</div>
+							</div>
+							<div class="top-cart-item-quantity">x 2</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Cart Saved Text
+				============================================= -->
+				<div class="py-2 px-3 mt-auto text-black-50 text-smaller bg-color-light">
+					<span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--themecolor)" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M54.46089,201.53911c-9.204-9.204-3.09935-28.52745-7.78412-39.85C41.82037,149.95168,24,140.50492,24,127.99963,24,115.4945,41.82047,106.048,46.67683,94.31079c4.68477-11.32253-1.41993-30.6459,7.78406-39.8499s28.52746-3.09935,39.85-7.78412C106.04832,41.82037,115.49508,24,128.00037,24c12.50513,0,21.95163,17.82047,33.68884,22.67683,11.32253,4.68477,30.6459-1.41993,39.8499,7.78406s3.09935,28.52746,7.78412,39.85C214.17963,106.04832,232,115.49508,232,128.00037c0,12.50513-17.82047,21.95163-22.67683,33.68884-4.68477,11.32253,1.41993,30.6459-7.78406,39.8499s-28.52745,3.09935-39.85,7.78412C149.95168,214.17963,140.50492,232,127.99963,232c-12.50513,0-21.95163-17.82047-33.68884-22.67683C82.98826,204.6384,63.66489,210.7431,54.46089,201.53911Z" opacity="0.2"></path><path d="M54.46089,201.53911c-9.204-9.204-3.09935-28.52745-7.78412-39.85C41.82037,149.95168,24,140.50492,24,127.99963,24,115.4945,41.82047,106.048,46.67683,94.31079c4.68477-11.32253-1.41993-30.6459,7.78406-39.8499s28.52746-3.09935,39.85-7.78412C106.04832,41.82037,115.49508,24,128.00037,24c12.50513,0,21.95163,17.82047,33.68884,22.67683,11.32253,4.68477,30.6459-1.41993,39.8499,7.78406s3.09935,28.52746,7.78412,39.85C214.17963,106.04832,232,115.49508,232,128.00037c0,12.50513-17.82047,21.95163-22.67683,33.68884-4.68477,11.32253,1.41993,30.6459-7.78406,39.8499s-28.52745,3.09935-39.85,7.78412C149.95168,214.17963,140.50492,232,127.99963,232c-12.50513,0-21.95163-17.82047-33.68884-22.67683C82.98826,204.6384,63.66489,210.7431,54.46089,201.53911Z" fill="none" stroke="var(--themecolor)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><polyline points="172 104 113.333 160 84 132" fill="none" stroke="var(--themecolor)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg> You save $10.00 on this order.</span>
+				</div>
+
+				<!-- Cart Price and Button
+				============================================= -->
+				<div class="top-cart-action flex-column align-items-stretch">
+					<div class="d-flex justify-content-between align-items-center mb-2">
+						<small class="text-uppercase ls1">Total</small>
+						<h4 class="fw-medium font-body mb-0">$69.97</h4>
+					</div>
+					<a href="#" class="button btn-block text-center m-0 fw-normal"><i style="position: relative; top: -2px;"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFF" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M40,192a16,16,0,0,0,16,16H216a8,8,0,0,0,8-8V88a8,8,0,0,0-8-8H56A16,16,0,0,1,40,64Z" opacity="0.2"></path><path d="M40,64V192a16,16,0,0,0,16,16H216a8,8,0,0,0,8-8V88a8,8,0,0,0-8-8H56A16,16,0,0,1,40,64v0A16,16,0,0,1,56,48H192" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"></path><circle cx="180" cy="144" r="12"></circle></svg></i> Checkout</a>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
 
 	<!-- Document Wrapper
 	============================================= -->
@@ -106,7 +175,7 @@
 						<nav class="primary-menu with-arrows order-lg-1 order-last px-0">
 
 							<ul class="menu-container">
-								<li class="menu-item current">
+								<li class="menu-item">
 									<a class="menu-link" href="index.html">
 										<div>Početna</div>
 									</a>
@@ -120,7 +189,7 @@
 									</ul> -->
 								</li>
 								<li class="menu-item mega-menu mega-menu-full">
-									<a href="proizvodi.html" class="menu-link"><div>Proizvodi</div></a>
+									<a href="proizvodi.html" class="menu-link current"><div>Proizvodi</div></a>
 
 									<!-- Menu DropDown
 									============================================= -->
@@ -200,198 +269,115 @@
 			<div class="header-wrap-clone"></div>
 		</header><!-- #header end -->
 
-		<!-- Hero Section
-		============================================= -->
-		<section id="slider" class="slider-element dark justify-content-start">
-
-			<!-- Hero Text
-			============================================= -->
-			<div class="container z-1">
-				<div class="row align-items-start justify-content-center justify-content-xl-start py-6">
-					<div class="col-xl-6 col-lg-9 col-md-10 mt-xl-4 text-center text-xl-start">
-						<p class="op-07 text-white mb-3 text-uppercase ls2 text-smaller" >Kvalitet je svačija odgovornost</p>
-						<h1 class="display-4 mb-5 text-white fw-medium">Napravite mesta za  <span class="svg-underline nocolor">eleganciju.</span></h1>
-						<a href="proizvodi.html" class="button button-large button-white button-light h-op-09 color m-0 fw-normal color px-4"><i style="position: relative; top: -2px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="var(--themecolor)" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><rect x="32" y="48" width="192" height="160" rx="8" opacity="0.2"></rect><rect x="32" y="48" width="192" height="160" rx="8" stroke-width="16" stroke="var(--themecolor)" stroke-linecap="round" stroke-linejoin="round" fill="none"></rect><path d="M168,88a40,40,0,0,1-80,0" fill="none" stroke="var(--themecolor)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg></i> Pogledaj ponudu</a>
-					</div>
-				</div>
-			</div>
-
-			<!-- Hero line in Responsive
-			============================================= -->
-			<div class="line d-block d-xl-none my-0"></div>
-
-			<!-- Hero Image
-			============================================= -->
-			<div class="hero-image">
-				<img src="demos/furniture/images/hero.png" alt="">
-			</div>
-
-		</section>
 
 		<!-- Content
 		============================================= -->
 		<section id="content">
-			<div class="content-wrap py-0">
+			<div class="content-wrap py-0 overflow-visible">
 
-				<!-- 1. Section Why Choose Us
-				============================================= -->
-				<div class="section bg-color-light mt-0">
-					<div class="container text-center mw-md topmargin bottommargin">
+				<div class="section bg-color dark overflow-visible mt-0">
+					<div class="container">
 
-						<h2 style="margin-top:-100px;" class="display-4 fw-normal">Zašto izabrati <span data-animate="svg-underline-animated" class="svg-underline nocolor"><span> Komo</span></span> stolove?</h2>
-
-						<div class="clear"></div>
-
-						<!-- Features Area -->
-						<div class="row col-mb-50 mb-0 mt-5 justify-content-center">
-							<div class="col-sm-6 col-lg-4" style="margin-top:-50px;">
-								<div class="feature-box fbox-center fbox-dark fbox-plain">
-									<div class="fbox-icon">
-										<!--  -->
-									</div>
-									<div class="fbox-content">
-										<h2 class="nott fw-medium h4 mb-4">Jedinstven dizajn</h2>
-										<p class="">Trpezarijski stolovi i praktični stočići za dnevni boravak pružiće vašem domaćinstvu čistu eleganciju</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-sm-6 col-lg-4"  style="margin-top:-50px;">
-								<div class="feature-box fbox-center fbox-dark fbox-plain">
-									<div class="fbox-icon">
-									</div>
-									<div class="fbox-content">
-										<h2 class="nott fw-medium h4 mb-4">Siguran kvalitet</h2>
-										<p class="">Naš tim visokokvalifikovanih zanatljija za izradu proizvoda koriste kvalitetan materijal kao što su čelik, drvo, staklo, kompakt ploče, mermer, granit i kvarc</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-sm-6 col-lg-4"  style="margin-top:-50px;">
-								<div class="feature-box fbox-center fbox-dark fbox-plain">
-									<div class="fbox-icon">
-									</div>
-									<div class="fbox-content">
-										<h2 class="nott fw-medium h4 mb-4">Vaša zamisao - naša izrada</h2>
-										<p class="">Pored standardnih modela, iskoristite mogućnost da vašu ideju sprovedemo u delo.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Brand Logo Area -->
-						<!-- <div class="row justify-content-center">
-
-							<div class="col-lg-9">
-								<div class="row justify-content-center align-items-center text-center mx-auto">
-									<div class="col center op-05"><img src="demos/furniture/images/sponsors/amazon.svg" alt="" width="100"></div>
-									<div class="col center op-05"><img src="demos/furniture/images/sponsors/cnn.svg" alt="" width="100"></div>
-									<div class="col center op-05"><img src="demos/furniture/images/sponsors/google.svg" alt="" width="100"></div>
-									<div class="col center op-05"><img src="demos/furniture/images/sponsors/linkedin.svg" alt="" width="100"></div>
-								</div>
-								<div class="row justify-content-center align-items-center mx-auto text-center mt-3">
-									<div class="col center op-05"><img src="demos/furniture/images/sponsors/netflix.svg" alt="" width="100"></div>
-									<div class="col center op-05"><img src="demos/furniture/images/sponsors/jetblue.svg" alt="" width="100"></div>
-									<div class="col center op-05"><img src="demos/furniture/images/sponsors/github.svg" alt="" width="100"></div>
-								</div>
-							</div>
-						</div> -->
-
-					</div>
-				</div> <!-- Section End -->
-
-				<!-- 2. Section Shop by Category
-				============================================= -->
-				<!-- Section End -->
-
-				<!-- 3. Section new Arrivals
-				============================================= -->
-				<div class="section custom-bg mt-3 mb-0" style="--custom-bg: #ffffff ; padding: 100px 0;">
-					<div class="container" style="margin-top: -150px;">
-
-						<!-- Shop
+						<!-- 1. Section
 						============================================= -->
-						<div id="shop" class="shop row gutter-30 col-mb-30 mt-3">
+						<div class="single-product py-lg-3">
 
-							<!-- Title -->
-							<div class="col-xl-3 col-lg-6 col-6">
-								<h3 class="mb-4 fw-normal h1">Serija <span data-animate="svg-underline-animated" class="svg-underline nocolor"><span>KUPA</span></span></h3>
-								<p class="op-07 mb-4">Savremena reinterpretacija tradicionalnog trpezarijskog stola kroz visoko sofisticirana dizajnerska rešenja uparena sa upečatljivim luksuznim materijalima.</p>
-								<a href="proizvodi.html" class="button button-border py-1 nott ls0 fw-normal button-dark border-width-1 border-color h-bg-color">Pogledaj ponudu</a>
-								<!-- <a href="demo-furniture-products.html" class="button button-border py-1 nott ls0 fw-normal button-dark border-width-1 border-color h-bg-color">Popular</a> -->
+							<!-- Product
+							============================================= -->
+							<div class="product">
+
+								<div class="row">
+
+									<!-- Product Image
+									============================================= -->
+									<div class="col-md-6">
+										<div class="row align-items-start gutter-30" data-lightbox="gallery"> <!-- .align-items-center for mobile Bugs fixed -->
+											<a href="slike/kupa-kompakt.jpg" data-lightbox="gallery-item" class="col-sm-12 col-6"><img src="slike/kupa-kompakt.jpg" alt="Image 1"></a>
+											<a href="slike/kupa-kompakt2.jpg" data-lightbox="gallery-item" class="col-sm-12 col-6"><img src="slike/kupa-kompakt2.jpg" alt="Image 4"></a>
+											<a href="slike/kupa-mermer.jpg" data-lightbox="gallery-item" class="col-sm-12 col-6"><img src="slike/kupa-mermer.jpg" alt="Image 2"></a>
+											<a href="slike/kupa-mermer2.jpg" data-lightbox="gallery-item" class="col-sm-12 col-6"><img src="slike/kupa-mermer2.jpg" alt="Image 3"></a>
+										</div>
+									</div>
+
+									<!-- Product Description
+									============================================= -->
+									<div class="col-md-6 product-desc p-lg-5 px-4 py-0 mt-5 mt-md-0 content-sticky">
+
+										<!-- Product Title
+										============================================= -->
+										<h2 class="mb-3 fw-normal text-white">Serija Kupa</h2>
+
+										<!-- Product Price
+										============================================= -->
+										<h3 class="h2 mb-5 fw-medium text-white">od 524€
+										</h3>
+
+										<!-- Product Single - Quantity & Cart Button
+										============================================= -->
+										<form class="cart mb-0 d-flex align-items-center" method="post" enctype='multipart/form-data'>
+											<!-- <div class="quantity position-relative mb-3 clearfix">
+												<input type="button" value="-" class="minus">
+												<input type="number" step="1" min="1" max="3" name="quantity" value="1" title="Qty" class="qty" />
+												<input type="button" value="+" class="plus">
+												<div class="clear"></div>
+												<span class="stock-in">Only 3 Stocks Available</span>
+												<span class="stock-out">Ooops! There is no more Stock</span>
+											</div> -->
+											<button type="submit" class="add-to-cart button button-large fw-medium color button-light bg-white px-lg-4 add-to-cart m-0 mb-3"><i style="position: relative; top: -2px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="var(--themecolor)" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M62.54543,144H188.10132a16,16,0,0,0,15.74192-13.13783L216,64H48Z" opacity="0.2"></path><path d="M184,184H69.81818L41.92162,30.56892A8,8,0,0,0,34.05066,24H16" fill="none" stroke="var(--themecolor)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><circle cx="80" cy="204" r="20" fill="none" stroke="var(--themecolor)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle><circle cx="184" cy="204" r="20" fill="none" stroke="var(--themecolor)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle><path d="M62.54543,144H188.10132a16,16,0,0,0,15.74192-13.13783L216,64H48" fill="none" stroke="var(--themecolor)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg></i> Poruči</button>
+										</form><!-- Product Single - Quantity & Cart Button End -->
+
+
+										<!-- Line
+										============================================= -->
+										<div class="line my-5"></div>
+
+										<!-- Product Toggle - Overview
+										============================================= -->
+										<div class="pb-4 qv-toogle">
+											<a href="#" class="font-primary d-flex align-items-center mb-0 text-white" data-bs-toggle="collapse" data-bs-target="#overview" aria-expanded="true" aria-controls="overview">Karakteristike
+												<i class="icon-line-plus ms-auto"></i>
+												<i class="icon-line-minus ms-auto"></i>
+											</a>
+											<div class="collapse show" id="overview">
+												<p class="op-06 fw-normal my-2">Libero velit id eaque ex quae laboriosam nulla optio doloribus! Perspiciatis, libero, neque, perferendis at nisi optio dolor. Uniquely extend diverse meta-services without low-risk high-yield paradigms. Synergistically envisioneer equity invested e-services for innovative technology. Objectively generate.</p>
+											</div>
+										</div>
+
+										<!-- Product Toggle - Materials
+										============================================= -->
+										<div class="pb-4 qv-toogle">
+											<a href="#" class="font-primary d-flex align-items-center mb-0 collapsed text-white" data-bs-toggle="collapse" data-bs-target="#materials" aria-expanded="false" aria-controls="materials">Materiajal
+												<i class="icon-line-plus ms-auto"></i>
+												<i class="icon-line-minus ms-auto"></i>
+											</a>
+											<div class="collapse" id="materials">
+												<p class="op-06 fw-normal my-2">Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.</p>
+											</div>
+										</div>
+
+										
+
+									</div>
+								</div>
+
 							</div>
 
-							<!-- Product 1 -->
-						<div class="product col-lg-3 col-md-4 col-sm-6 col-6">
-							<div class="grid-inner">
-								<div class="product-image">
-									<a href="kupa.html"><img src="slike/1.jpg" alt="Light Grey Sofa"></a>
-									<a href="kupa.html"><img src="slike/2.jpg" alt="Light Grey Sofa"></a>
-									
-								</div>
-								<div class="product-desc">
-									<div class="product-title mb-0"><h4 class="mb-0"><a class="fw-medium" href="kupa.html"><strong>Mermer</strong></a></h4></div>
-									<h5 class="product-price fw-normal">799€</h5>
-								</div>
-							</div>
-						</div>
-
-						<!-- Product 2 -->
-						<div class="product col-lg-3 col-md-4 col-sm-6 col-6">
-							<div class="grid-inner">
-								<div class="product-image">
-									<a href="kupa.html"><img src="slike/3.jpg" alt="Celling Lights"></a>
-									<a href="kupa.html"><img src="slike/4.jpg" alt="Celling Lights"></a>
-									
-								</div>
-								<div class="product-desc">
-									<div class="product-title mb-0"><h4 class="mb-0"><a class="fw-medium" href="kupa.html"><strong>Kompakt</strong></a></h4></div>
-									
-									<h5 class="product-price fw-normal">639€</h5>
-								
-								</div>
-							</div>
-						</div>
-
-						<!-- Product 3 -->
-						<div class="product col-lg-3 col-md-4 col-sm-6 col-6">
-							<div class="grid-inner">
-								<div class="product-image">
-									<a href="kupa.html"><img src="slike/6.jpg" alt="High Stand Chair"></a>
-									<a href="kupa.html"><img src="slike/5.jpg" alt="High Stand Chair"></a>
-									
-								</div>
-								<div class="product-desc">
-									<div class="product-title mb-0"><h4 class="mb-0"><a class="fw-medium" href="kupa.html"><strong>Mermer</strong></a></h4></div>
-									<h5 class="product-price fw-normal">524€</h5>
-								</div>
-							</div>
-						</div>
-
-						</div><!-- #shop end -->
+						</div><!-- Section End -->
 
 					</div>
-				</div><!-- Section End -->
 
-				<!-- 4. Section Explore your Home & Office
-				============================================= -->
-				<div class="container-fluid">
+				</div>
 
-					<div class="row align-items-lg-center col-mb-30">
-
-						<!-- Image -->
-						<div class="col-xl-8 col-lg-6 px-lg-0 min-vh-50 min-vh-lg-75" style="background: url('slike/slika1.jpg') no-repeat center center; background-size: cover;">
-						</div>
-
-						<!-- Content -->
-						<div class="col-xl-4 col-lg-6 px-lg-5 py-5">
-							<h3 class="h1 mb-4 fw-normal">Uskladite <span data-animate="svg-underline-animated" class="svg-underline nocolor"><span>mermer</span></span> sa toplinom <span data-animate="svg-underline-animated" data-delay="300" class="svg-underline nocolor"><span>drveta</span></span> – sve ispod spektakularnih svetla.</h3>
-							<p>Volimo da zamislimo da je naš nameštaj smešten usred života naših kupaca i dizajniramo ga tako da izdrži upotrebu i zlostavljanje koje dolazi u svakodnevnim situacijama, kao što je podizanje porodice. Nikada ne morate da birate između stila i porodičnog života – možete imati oboje.</p>
-							<a href="proizvodi.html" class="button button-border m-0 button-dark border-width-1 border-default h-bg-color">Pogledaj novu sezonu <i class="icon-long-arrow-right"></i></a>
-						</div>
+				<div class="section bg-transparent my-0 py-5">
+					<div class="mw-sm mx-auto text-center px-4 px-md-0">
+						<h2 class="fw-medium mb-3">How do We Install?</h2>
+						<p class="op-07 px-md-5 mb-5">Seamlessly leverage existing adaptive supply chains without process-centric results. Efficiently incubate web-enabled materials without functional technologies.</p>
+						<a href="https://www.youtube.com/watch?v=lWb_427hIl0" data-lightbox="iframe" class="d-flex flex-column justify-content-center align-items-center mb-2  h-scale-sm transform-ts rounded-xxxl" style="background: url('https://source.unsplash.com/lqdrW2O-GKA') no-repeat center center / cover; min-height: 450px">
+							<i class="icon-line-play h3 icon-stacked text-center rounded-circle ps-1 color bg-white"></i>
+							<h4 class="mb-0 text-monospace fw-normal text-white" style="text-shadow: 1px 1px 1px #00000073">03:46</h4>
+						</a>
 					</div>
-
-				</div><!-- Section End -->
+				</div>
 
 				<!-- 5. Section Fetured Boxes
 				============================================= -->
@@ -435,59 +421,6 @@
 										<h2 class="nott fw-medium h4 mb-4">Pogodnosti pri plaćanju</h2>
 										<p class="op-06">Continually recaptiualize 2.0 action items after global information. Efficiently strategize holistic networks.</p>
 									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div><!-- Section End -->
-
-				<!-- 6. Section Instagram
-				============================================= -->
-				<div class="section custom-bg my-0 py-0" style="--custom-bg: var(--themecolor);">
-					<div class="row align-items-center no-gutters">
-						<!-- Instagram Center Col - Text -->
-						<div class="col-lg-4 py-5 order-lg-2">
-							<div class="text-center dark p-5">
-								<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="#FFF" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M172,36H84A47.99987,47.99987,0,0,0,36,84v88a47.99988,47.99988,0,0,0,48,48h88a47.99988,47.99988,0,0,0,48-48V84A47.99987,47.99987,0,0,0,172,36ZM128,168a40,40,0,1,1,40-40A40.0001,40.0001,0,0,1,128,168Z" opacity="0.2"></path><circle cx="128" cy="128" r="40" fill="none" stroke="#FFF" stroke-miterlimit="10" stroke-width="16"></circle><rect class x="36" y="36" width="184" height="184" rx="48" stroke-width="16" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" fill="none"></rect><circle cx="180" cy="75.99998" r="12"></circle></svg>
-
-								<h3 class="mt-3 mb-5 fw-normal h2">Zapratite nas na <span data-animate="svg-underline-animated" class="svg-underline nocolor"><span>Instagramu</span></span></h3>
-
-								<a href="https://www.instagram.com/komodesign_/" target="_blank" class="button button-large button-border nott ls0 fw-normal button-light button-white border-width-1 m-0" style="border-color: rgba(255,255,255,0.25)">@komodesign_</a>
-							</div>
-						</div>
-
-						<!-- Instagram Left Col - Image -->
-						<div class="col-lg-4 col-md-6 order-lg-1">
-							<div class="row gutter-4">
-								<div class="col-6">
-									<a class="d-block instagram-image" href="https://www.instagram.com/komodesign_/" target="_blank" style="background: url('slike/in1.jpg') no-repeat center center; background-size:cover; min-height: 33vh;"></a>
-								</div>
-								<div class="col-6">
-									<a class="d-block instagram-image" href="https://www.instagram.com/komodesign_/" target="_blank" style="background: url('slike/in2.jpg') no-repeat center center; background-size:cover; min-height: 33vh;"></a>
-								</div>
-								<div class="col-6">
-									<a class="d-block instagram-image" href="https://www.instagram.com/komodesign_/" target="_blank" style="background: url('slike/in3.jpg') no-repeat center center; background-size:cover; min-height: 33vh;"></a>
-								</div>
-								<div class="col-6">
-									<a class="d-block instagram-image" href="https://www.instagram.com/komodesign_/" target="_blank" style="background: url('slike/in4.jpg') no-repeat center center; background-size:cover; min-height: 33vh;"></a>
-								</div>
-							</div>
-						</div>
-
-						<!-- Instagram Right Col - Image -->
-						<div class="col-lg-4 col-md-6 order-lg-3 mt-1 mt-md-0 ps-md-1 ps-lg-0">
-							<div class="row gutter-4">
-								<div class="col-6">
-									<a class="d-block instagram-image" href="https://www.instagram.com/komodesign_/" target="_blank" style="background: url('slike/in5.jpg') no-repeat center center; background-size:cover; min-height: 33vh;"></a>
-								</div>
-								<div class="col-6">
-									<a class="d-block instagram-image" href="https://www.instagram.com/komodesign_/" target="_blank" style="background: url('slike/in6.jpg') no-repeat center center; background-size:cover; min-height: 33vh;"></a>
-								</div>
-								<div class="col-6">
-									<a class="d-block instagram-image" href="https://www.instagram.com/komodesign_/" target="_blank" style="background: url('slike/in7.jpg') no-repeat center center; background-size:cover; min-height: 33vh;"></a>
-								</div>
-								<div class="col-6">
-									<a class="d-block instagram-image" href="https://www.instagram.com/komodesign_/" target="_blank" style="background: url('slike/in8.jpg') no-repeat center center; background-size:cover; min-height: 33vh;"></a>
 								</div>
 							</div>
 						</div>
